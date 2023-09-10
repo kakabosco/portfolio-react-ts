@@ -7,7 +7,16 @@ export const GithubSection = styled.div`
   img {
     height: 160px;
 
-    @media (max-width: 768px) {
+    &:first-child {
+      margin-right: 24px;
+
+      @media (max-width: 600px) {
+        margin-right: 0;
+        margin-bottom: 16px;
+      }
+    }
+
+    @media (max-width: 600px) {
       height: 120px;
     }
   }

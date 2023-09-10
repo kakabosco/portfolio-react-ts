@@ -5,7 +5,7 @@ export const ProfilePic = styled.img`
   border-radius: 50%;
   margin-bottom: 24px;
 
-  @media (max-width: 768px) {
-    max-width: 80%;
+  @media (max-width: 600px) {
+    max-width: 40%;
   }
 `

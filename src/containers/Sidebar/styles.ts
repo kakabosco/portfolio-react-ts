@@ -14,15 +14,15 @@ export const Description = styled(P)`
 export const ButtonTheme = styled.button`
   padding: 8px;
   margin-bottom: 60px;
-  color: #eee;
+  color: ${(props) => props.theme.bgColor};
   font-size: 10px;
   font-weight: bold;
   border-radius: 12px;
   border: none;
-  background-color: #282a35;
+  background-color: ${(props) => props.theme.mainColor};
   cursor: pointer;
 
-  @media (max-width: 768px) {
+  @media (max-width: 600px) {
     width: 120px;
   }
 `
@@ -32,9 +32,7 @@ export const SidebarContainer = styled.div`
   top: 80px;
   left: 0;
 
-  @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  @media (max-width: 600px) {
+    text-align: center;
   }
 `
