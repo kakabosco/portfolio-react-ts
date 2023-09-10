@@ -1,12 +1,19 @@
-import logo from "./logo.svg"
-import Teste from "./Teste"
-import GlobalStyle from "./styles"
+import GlobalStyle, { Container } from "./styles"
+import Sidebar from "./containers/Sidebar"
+import About from "./containers/About"
+import Projects from "./containers/Projects"
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <Teste />
+      <Container>
+        <Sidebar />
+        <main>
+          <About />
+          <Projects />
+        </main>
+      </Container>
     </>
   )
 }
